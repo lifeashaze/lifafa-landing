@@ -6,7 +6,7 @@ import { Tabs } from "./ui/tabs";
 export function TabsDemo() {
   const tabs = [
     {
-      title: "Product",
+      title: "UI/UX",
       value: "product",
       content: (
         <div className="flex justify-center items-center md:flex-row w-full overflow-hidden relative h-full border-[3px] border-background-dark rounded-2xl p-10 text-background-dark bg-white  ">
@@ -45,38 +45,38 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "Services",
-      value: "services",
+      title: "Web Development",
+      value: "Web Development",
       content: (
         <div className="w-full overflow-hidden relative h-full border-[3px] border-background-dark rounded-2xl p-10 text-background-dark bg-white  ">
-          <p>Services tab</p>
+          <p>Web Development tab</p>
         </div>
       ),
     },
     {
-      title: "Playground",
-      value: "playground",
+      title: "Graphic Design",
+      value: "Graphic Design",
       content: (
         <div className="w-full overflow-hidden relative h-full border-[3px] border-background-dark rounded-2xl p-10 text-background-dark bg-white  ">
-          <p>Playground tab</p>
+          <p>Graphic Design</p>
         </div>
       ),
     },
     {
-      title: "Content",
-      value: "content",
+      title: "Motion Graphics",
+      value: "Motion Graphics",
       content: (
         <div className="w-full overflow-hidden relative h-full border-[3px] border-background-dark rounded-2xl p-10 text-background-dark bg-white  ">
-          <p>Content tab</p>
+          <p>Motion Graphics tab</p>
         </div>
       ),
     },
     {
-      title: "Random",
-      value: "random",
+      title: "3D & Product Design",
+      value: "3D & Product Design",
       content: (
         <div className="w-full overflow-hidden relative h-full border-[3px] border-background-dark rounded-2xl p-10 text-background-dark bg-white  ">
-          <p>Random tab</p>
+          <p>3D & Product Design tab</p>
         </div>
       ),
     },
