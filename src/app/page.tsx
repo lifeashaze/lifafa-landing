@@ -1,11 +1,13 @@
-import Image from "next/image"; 
+import Image from "next/image";
 import { TabsDemo } from "@/components/Tabs";
-import { TeamCard } from "@/components/TeamCard";
+import { TeamCards } from "@/components/TeamCard";
+import { OurTeam } from "@/components/Team";
 
 export default function Home() {
   return (
-<div>
-<TeamCard />
-</div>
+    <div>
+      <TabsDemo />
+      <OurTeam />
+    </div>
   );
 }
