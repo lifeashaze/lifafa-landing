@@ -1,8 +1,8 @@
 import Marquee from "react-fast-marquee";
 
-export function LifafaHeroMarquee() {
+export function LifafaHeroMarquee2() {
   return (
-    <div className="flex p-4 -mt-10 text-4xl font-extrabold text-primary bg-background-dark border-4 border-primary border-r-0 border-l-0 border-solid leading-[56px] max-md:flex-wrap -skew-y-[4deg] ">
+    <div className="flex -mt-20 p-4 text-4xl font-extrabold text-background-dark bg-primary border-4 border-background-dark border-r-0 border-l-0 border-solid leading-[56px] max-md:flex-wrap skew-y-[4deg] ">
       <Marquee speed={200}  autoFill={true}>
         <div className="flex">
           <p className="mr-10">lifafa works</p>

@@ -1,13 +1,21 @@
-import Image from "next/image";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
 import { TabsDemo } from "@/components/Tabs";
-import { TeamCards } from "@/components/TeamCard";
 import { OurTeam } from "@/components/Team";
+
+import { Footer } from "@/components/Footer";
+import { Contact } from "@/components/Contact";
+
 
 export default function Home() {
   return (
     <div>
+      <Header />
+      <Hero />
       <TabsDemo />
       <OurTeam />
+      <Contact />
+      <Footer />
     </div>
   );
 }
