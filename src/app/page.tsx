@@ -2,7 +2,6 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { TabsDemo } from "@/components/Tabs";
 import { OurTeam } from "@/components/Team";
-
 import { Footer } from "@/components/Footer";
 import { Contact } from "@/components/Contact";
 
