@@ -1,9 +1,14 @@
-export function Contact(){
-  return(
+import CalComponent from "./Cal";
+
+export function Contact() {
+  return (
     <>
-    <div className="h-[75vh]">
-      <h1 className="text-4xl font-bold text-center ">Contact Section</h1>
-    </div>
+      <div>
+        <h2 className="my-10 text-4xl font-bold text-center">
+          Got an idea? Contact us!
+        </h2>{" "}
+        <CalComponent  />
+      </div>
     </>
-  )
+  );
 }
