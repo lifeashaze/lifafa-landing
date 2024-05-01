@@ -15,7 +15,7 @@ export default function CalComponent() {
   }, []);
   return (
     <Cal
-      calLink="abhishek-bhagawati-qtxp5y/15min"
+      calLink="lifafa-works/30min"
       style={{ width: "100%", height: "100%", overflow: "scroll" }}
       config={{ layout: "month_view" }}
     />

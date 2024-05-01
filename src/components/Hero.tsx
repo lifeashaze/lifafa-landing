@@ -5,7 +5,7 @@ import { LifafaHeroMarquee2 } from "./Marquee2";
 export function Hero() {
   return (
     <>
-      <div className="flex flex-col items-center text-7xl font-bold h-[100vh] leading-normal ">
+      <div className="flex flex-col p-10  text-7xl font-bold h-[50vh] leading-normal ">
         <h1>
           An <span className="text-primary underline">envelope</span>
         </h1>
