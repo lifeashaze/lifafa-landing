@@ -1,7 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { Tabs } from "./ui/tabs";
+import { Bricolage_Grotesque } from "next/font/google";
+
+const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export function TabsDemo() {
   const tabs = [
@@ -15,7 +17,7 @@ export function TabsDemo() {
               <img src="/iPhone-Mockup.svg" alt="" className="object-cover h-full w-full" />
             </div>
             <div className="gap-10 flex flex-col">
-              <h1 className="text-background-dark text-xl md:text-3xl font-bold">
+              <h1 className={"text-background-dark text-xl md:text-3xl font-bold " + bricolage.className}>
                 Everything from a <br /> landing page to large scale apps
               </h1>
               <div className="text-black flex flex-col gap-3 w-[30rem]">
@@ -50,7 +52,7 @@ export function TabsDemo() {
             <img src="/iPhone-Mockup.svg" alt="" className="object-cover h-full w-full" />
             </div>
             <div className="gap-10 flex flex-col">
-              <h1 className="text-background-dark text-xl md:text-3xl font-bold">
+              <h1 className={"text-background-dark text-xl md:text-3xl font-bold " + bricolage.className}>
                 Everything from a <br /> landing page to large scale apps
               </h1>
               <div className="text-black flex flex-col gap-3 w-[30rem]">
@@ -74,7 +76,7 @@ export function TabsDemo() {
             <img src="/iPhone-Mockup.svg" alt="" className="object-cover h-full w-full" />
             </div>
             <div className="gap-10 flex flex-col">
-              <h1 className="text-background-dark text-xl md:text-3xl font-bold">
+              <h1 className={"text-background-dark text-xl md:text-3xl font-bold " + bricolage.className}>
                 Everything from a <br /> landing page to large scale apps
               </h1>
               <div className="text-black flex flex-col gap-3 w-[30rem]">
@@ -103,7 +105,7 @@ export function TabsDemo() {
             <img src="/iPhone-Mockup.svg" alt="" className="object-cover h-full w-full" />
             </div>
             <div className="gap-10 flex flex-col">
-              <h1 className="text-background-dark text-xl md:text-3xl font-bold">
+              <h1 className={"text-background-dark text-xl md:text-3xl font-bold " + bricolage.className}>
                 Everything from a <br /> landing page to large scale apps
               </h1>
               <div className="text-black flex flex-col gap-3 w-[30rem]">
@@ -139,7 +141,7 @@ export function TabsDemo() {
             <img src="/iPhone-Mockup.svg" alt="" className="object-cover h-full w-full" />
             </div>
             <div className="gap-10 flex flex-col">
-              <h1 className="text-background-dark text-xl md:text-3xl font-bold">
+              <h1 className={"text-background-dark text-xl md:text-3xl font-bold " + bricolage.className}>
                 Everything from a <br /> landing page to large scale apps
               </h1>
               <div className="text-black flex flex-col gap-3 w-[30rem]">
@@ -174,7 +176,7 @@ export function TabsDemo() {
             <img src="/iPhone-Mockup.svg" alt="" className="object-cover h-full w-full" />
             </div>
             <div className="gap-10 flex flex-col">
-              <h1 className="text-background-dark text-xl md:text-3xl font-bold">
+              <h1 className={"text-background-dark text-xl md:text-3xl font-bold " + bricolage.className}>
                 Everything from a <br /> landing page to large scale apps
               </h1>
               <div className="text-black flex flex-col gap-3 w-[30rem]">
@@ -202,7 +204,7 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className="h-[50rem]  [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
+    <div className={"h-[50rem]  [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40 " + bricolage.className}>
       <h2 className="mb-20 text-5xl font-bold text-center  w-full">Services</h2>
       <Tabs tabs={tabs} />
     </div>

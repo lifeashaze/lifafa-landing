@@ -1,12 +1,16 @@
+import { Bricolage_Grotesque } from "next/font/google";
 import { TeamCardTab } from "./TeamCardTab";
 import Image from "next/image";
+
+const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
+
 export function TeamCards() {
   return (
     <div>
       <div className="flex flex-col xl:flex-row justify-center gap-4 items-center mt-4">
         <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
           <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className="p-4 text-3xl font-bold text-center tracking-wide leading-7">
+            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
               <h1>Prithvi Roy</h1>
             </div>
             <div className="mt-[20px]">
@@ -27,7 +31,7 @@ export function TeamCards() {
 
         <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
         <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className="p-4 text-3xl font-bold text-center tracking-wide leading-7">
+            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
               <h1>Chinmay Mhatre</h1>
             </div>
             <div className="mt-[20px]">
@@ -48,7 +52,7 @@ export function TeamCards() {
 
         <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
         <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className="p-4 text-3xl font-bold text-center tracking-wide leading-7">
+            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
               <h1>Prithvi Roy</h1>
               
             </div>
@@ -63,7 +67,7 @@ export function TeamCards() {
 
         <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
         <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className="p-4 text-3xl font-bold text-center tracking-wide leading-7">
+            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
               <h1>Prithvi Roy</h1>
             </div>
             <div className="mt-[-19px]"></div>
@@ -79,7 +83,7 @@ export function TeamCards() {
       <div className=" flex flex-col xl:flex-row justify-center gap-4 items-center mt-4">
         <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
         <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className="p-4 text-3xl font-bold text-center tracking-wide leading-7">
+            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
               <h1>Prithvi Roy</h1>
             </div>
             <div className="mt-[-19px]"></div>
@@ -93,7 +97,7 @@ export function TeamCards() {
 
         <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
         <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className="p-4 text-3xl font-bold text-center tracking-wide leading-7">
+            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
               <h1>Prithvi Roy</h1>
             </div>
             <div className="mt-[-19px]"></div>
@@ -107,7 +111,7 @@ export function TeamCards() {
 
         <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
         <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className="p-4 text-3xl font-bold text-center tracking-wide leading-7">
+            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
               <h1>Prithvi Roy</h1>
             </div>
             <div className="mt-[-19px]"></div>
