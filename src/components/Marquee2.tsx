@@ -1,9 +1,12 @@
 import Marquee from "react-fast-marquee";
+import { Bricolage_Grotesque } from "next/font/google";
+
+const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export function LifafaHeroMarquee2() {
   return (
-    <div className="flex -mt-20 p-4 text-4xl font-extrabold text-background-dark bg-primary border-4 border-background-dark border-r-0 border-l-0 border-solid leading-[56px] max-md:flex-wrap rotate-[4deg]">
-      <Marquee speed={200}  autoFill={true}>
+    <div className={"-mx-20 w-[110vw] flex -mt-20 p-4 text-4xl font-extrabold text-background-dark bg-primary border-4 border-background-dark border-r-0 border-l-0 border-solid leading-[56px] max-md:flex-wrap rotate-[4deg] " + bricolage.className}>
+      <Marquee speed={200}  autoFill={true} direction="right">
         <div className="flex">
           <p className="mr-10 ">lifafa works</p>
           <img
