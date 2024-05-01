@@ -39,7 +39,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          " flex flex-row items-center justify-center [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          " flex flex-row flex-wrap items-stretch justify-center [perspective:1000px] relative  overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
           containerClassName
         )}
       >
@@ -52,7 +52,7 @@ export const Tabs = ({
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
             className={cn(
-              "relative px-2 py-2",
+              "relative px-2 py-2 h-full",
               tabClassName,
               active.value === tab.value && "text-white" 
             )}
@@ -71,7 +71,7 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative block border-2 border-background-dark rounded-lg px-4 py-2">
+            <span className="h-full flex items-center justify-center relative border-2 border-background-dark rounded-lg px-4 py-2">
               {tab.title}
             </span>
           </button>
@@ -82,7 +82,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-16", contentClassName)}
+        className={cn("", contentClassName)}
       />
     </>
   );
@@ -104,7 +104,7 @@ export const FadeInDiv = ({
     return tab.value === tabs[0].value;
   };
   return (
-    <div className=" relative w-full h-full ">
+    <div className=" relative w-full h-[37rem] max-w-[90vw] mt-16 flex justify-center">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}

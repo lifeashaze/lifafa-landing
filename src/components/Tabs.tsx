@@ -11,7 +11,7 @@ export function TabsDemo() {
       title: "UI/UX",
       value: "UI/UX",
       content: (
-        <div className="flex justify-center items-center md:flex-row w-full overflow-hidden relative h-full border-[3px] border-background-dark rounded-2xl py-10  text-background-dark bg-white  ">
+        <div className="flex justify-center items-center md:flex-row w-full overflow-hidden relative h-full border-[3px] border-background-dark rounded-2xl p-10 text-background-dark bg-white">
           <div className="flex justify-center items-center">
             <div className="bg-[url('/worn-dots.png')] bg-primary hidden lg:block h-full w-[20rem] md:h-[32rem] md:w-[25rem] border-2 border-background-dark mr-10 rounded-md">
               <img src="/iPhone-Mockup.svg" alt="" className="object-cover h-full w-full" />
@@ -20,7 +20,7 @@ export function TabsDemo() {
               <h1 className={"text-background-dark text-xl md:text-3xl font-bold " + bricolage.className}>
                 Everything from a <br /> landing page to large scale apps
               </h1>
-              <div className="text-black flex flex-col gap-3 w-[30rem]">
+              <div className="text-black flex flex-col gap-3 md:w-[30rem] w-auto">
                 <p>
                   UX : We offer UX design as a standalone service, tailored to
                   meet specific project needs. Our expertise spans various
@@ -55,7 +55,7 @@ export function TabsDemo() {
               <h1 className={"text-background-dark text-xl md:text-3xl font-bold " + bricolage.className}>
                 Everything from a <br /> landing page to large scale apps
               </h1>
-              <div className="text-black flex flex-col gap-3 w-[30rem]">
+              <div className="text-black flex flex-col gap-3 md:w-[30rem] w-auto">
                 <p>
                   We make promotional sites, single page applications, web apps
                 </p>
@@ -79,7 +79,7 @@ export function TabsDemo() {
               <h1 className={"text-background-dark text-xl md:text-3xl font-bold " + bricolage.className}>
                 Everything from a <br /> landing page to large scale apps
               </h1>
-              <div className="text-black flex flex-col gap-3 w-[30rem]">
+              <div className="text-black flex flex-col gap-3 md:w-[30rem] w-auto">
                 <p>
                   Helping brands stand out through digital content and print
                   media.
@@ -108,7 +108,7 @@ export function TabsDemo() {
               <h1 className={"text-background-dark text-xl md:text-3xl font-bold " + bricolage.className}>
                 Everything from a <br /> landing page to large scale apps
               </h1>
-              <div className="text-black flex flex-col gap-3 w-[30rem]">
+              <div className="text-black flex flex-col gap-3 md:w-[30rem] w-auto">
                 <p>
                   We help companies create and display their brand identity and
                   their function via Title Animations, Explainer Videos, Logo
@@ -144,7 +144,7 @@ export function TabsDemo() {
               <h1 className={"text-background-dark text-xl md:text-3xl font-bold " + bricolage.className}>
                 Everything from a <br /> landing page to large scale apps
               </h1>
-              <div className="text-black flex flex-col gap-3 w-[30rem]">
+              <div className="text-black flex flex-col gap-3 md:w-[30rem] w-auto">
                 <p>
                   UX : We offer UX design as a standalone service, tailored to
                   meet specific project needs. Our expertise spans various
@@ -179,7 +179,7 @@ export function TabsDemo() {
               <h1 className={"text-background-dark text-xl md:text-3xl font-bold " + bricolage.className}>
                 Everything from a <br /> landing page to large scale apps
               </h1>
-              <div className="text-black flex flex-col gap-3 w-[30rem]">
+              <div className="text-black flex flex-col gap-3 md:w-[30rem] w-auto">
                 <p>
                   UX : We offer UX design as a standalone service, tailored to
                   meet specific project needs. Our expertise spans various
@@ -204,7 +204,7 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className={"h-[50rem]  [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40 " + bricolage.className}>
+    <div className={"[perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-center justify-center my-40 " + bricolage.className}>
       <h2 className="mb-20 text-5xl font-bold text-center  w-full">Services</h2>
       <Tabs tabs={tabs} />
     </div>
