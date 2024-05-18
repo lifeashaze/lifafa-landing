@@ -204,7 +204,7 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className={"[perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-center justify-center my-40 " + bricolage.className}>
+    <div id="services" className={"[perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-center justify-center my-40 " + bricolage.className}>
       <h2 className="mb-20 text-5xl font-bold text-center  w-full">Services</h2>
       <Tabs tabs={tabs} />
     </div>

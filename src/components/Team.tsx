@@ -8,7 +8,7 @@ const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 export function OurTeam() {
     return (
         <>
-        <div className="bg-background-dark  flex flex-col gap-10">
+        <div id="team" className="bg-background-dark  flex flex-col gap-10">
             <h2 className={"mt-10 text-4xl font-bold text-white text-center " + bricolage.className}>Our Team</h2>
             <TeamCards />
             <LifafaSectionMarquee />
