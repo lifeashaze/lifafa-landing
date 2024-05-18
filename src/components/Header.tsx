@@ -12,7 +12,7 @@ export function Header() {
       <div className="flex z-10 relative justify-between p-6">
         <Image src="./logo.svg" alt="Lifafa Logo" width={150} height={150} />
         <div className="flex gap-8">
-          <div className="flex gap-6">
+          <div className="flex gap-6 hidden sm:block">
             <Link href="#services">
               <button className="p-4 font-semibold">Services</button>
             </Link>
