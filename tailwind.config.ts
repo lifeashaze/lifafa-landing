@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        bricolage: ["Bricolage Grotesque", "sans-serif"],
+        sans: ["Space Grotesk", "sans-serif"],
+      },
       colors: {
         'primary': '#FABF1A',
         'primary-hover': '#D9A617',

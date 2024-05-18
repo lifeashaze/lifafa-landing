@@ -1,128 +1,40 @@
-import { Bricolage_Grotesque } from "next/font/google";
-import { TeamCardTab } from "./TeamCardTab";
 import Image from "next/image";
+import { TeamCardTab } from "./TeamCardTab";
+import { Bricolage_Grotesque } from "next/font/google";
 
 const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
-export function TeamCards() {
+interface props {
+  fname: string;
+  lname: string;
+  imgSrc: string;
+  roles: string[];
+}
+
+const TeamCard = ({fname, lname, imgSrc, roles} : props) => {
   return (
-    <div>
-      <div className="flex flex-col xl:flex-row justify-center gap-4 items-center mt-4">
-        <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
-          <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
-              <h1>Prithvi Roy</h1>
-            </div>
-            <div className="mt-[20px]">
-            <Image
-                src="/Chinmay.svg"
-                alt="Chinmay"
-                height={500}
-                width={500}
-              />
-            </div>
-            <div className="w-full gap-2 flex flex-wrap justify-center absolute bottom-4">
-              <TeamCardTab text="UI/UX" />
-              <TeamCardTab text="Graphic Design" />
-              <TeamCardTab text="Web Development" />
-            </div>
-          </div>
+    <div className="w-[320px] border-2 border-white rounded-lg bg-primary relative">
+      <div className="h-full flex flex-col justify-between bg-[url('/worn-dots.png')]">
+        <div
+          className="p-4 text-5xl font-bricolage text-center tracking-wide leading-10"
+        >
+          <h1 className={bricolage.className + " font-extrabold"}>
+            {fname}
+            <br/>
+            {lname}
+          </h1>
         </div>
-
-        <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
-        <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
-              <h1>Chinmay Mhatre</h1>
-            </div>
-            <div className="mt-[20px]">
-            <Image
-                src="/Chinmay.svg"
-                alt="Chinmay"
-                height={500}
-                width={500}
-              />
-            </div>
-            <div className="w-full gap-2 flex flex-wrap justify-center absolute bottom-4">
-              <TeamCardTab text="UI/UX" />
-              <TeamCardTab text="Graphic Design" />
-              <TeamCardTab text="Web Development" />
-            </div>
-          </div>
+        <div className="mt-[20px]">
+          <Image src={imgSrc} alt={`${fname} ${lname} image`} height={500} width={500} className="relative z-10 -mt-14"/>
         </div>
-
-        <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
-        <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
-              <h1>Prithvi Roy</h1>
-              
-            </div>
-            <div className="mt-[-19px]"></div>
-            <div className="w-full gap-2 flex flex-wrap justify-center absolute bottom-4">
-              <TeamCardTab text="UI/UX" />
-              <TeamCardTab text="Graphic Design" />
-              <TeamCardTab text="Web Development" />
-            </div>
-          </div>
-        </div>
-
-        <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
-        <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
-              <h1>Prithvi Roy</h1>
-            </div>
-            <div className="mt-[-19px]"></div>
-            <div className="w-full gap-2 flex flex-wrap justify-center absolute bottom-4">
-              <TeamCardTab text="UI/UX" />
-              <TeamCardTab text="Graphic Design" />
-              <TeamCardTab text="Web Development" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className=" flex flex-col xl:flex-row justify-center gap-4 items-center mt-4">
-        <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
-        <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
-              <h1>Prithvi Roy</h1>
-            </div>
-            <div className="mt-[-19px]"></div>
-            <div className="w-full gap-2 flex flex-wrap justify-center absolute bottom-4">
-              <TeamCardTab text="UI/UX" />
-              <TeamCardTab text="Graphic Design" />
-              <TeamCardTab text="Web Development" />
-            </div>
-          </div>
-        </div>
-
-        <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
-        <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
-              <h1>Prithvi Roy</h1>
-            </div>
-            <div className="mt-[-19px]"></div>
-            <div className="w-full gap-2 flex flex-wrap justify-center absolute bottom-4">
-              <TeamCardTab text="UI/UX" />
-              <TeamCardTab text="Graphic Design" />
-              <TeamCardTab text="Web Development" />
-            </div>
-          </div>
-        </div>
-
-        <div className="w-[320px] h-[360px] border-2 border-white rounded-lg bg-primary relative">
-        <div className="h-full flex flex-col justify-between py-2 bg-[url('/worn-dots.png')]">
-            <div className={"p-4 text-3xl font-bold text-center tracking-wide leading-7 " + bricolage.className}>
-              <h1>Prithvi Roy</h1>
-            </div>
-            <div className="mt-[-19px]"></div>
-            <div className="w-full gap-2 flex flex-wrap justify-center absolute bottom-4">
-              <TeamCardTab text="UI/UX" />
-              <TeamCardTab text="Graphic Design" />
-              <TeamCardTab text="Web Development" />
-            </div>
-          </div>
+        <div className="w-full gap-2 flex flex-wrap justify-center absolute bottom-4">
+          {roles.map((role) => (
+            <TeamCardTab key={role} text={role} />
+          ))}
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default TeamCard;
