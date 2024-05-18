@@ -5,7 +5,7 @@ const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export function LifafaHeroMarquee2() {
   return (
-    <div className={"-mx-20 w-[110vw] flex -mt-20 p-4 text-4xl font-extrabold text-background-dark bg-primary border-4 border-background-dark border-r-0 border-l-0 border-solid leading-[56px] max-md:flex-wrap rotate-[4deg] " + bricolage.className}>
+    <div className={"-mx-20 w-[200vw] sm:w-[110vw] flex -mt-20 p-4 text-4xl font-extrabold text-background-dark bg-primary border-4 border-background-dark border-r-0 border-l-0 border-solid leading-[56px] max-md:flex-wrap rotate-[4deg] " + bricolage.className}>
       <Marquee speed={200}  autoFill={true} direction="right">
         <div className="flex">
           <p className="mr-10 ">lifafa works</p>

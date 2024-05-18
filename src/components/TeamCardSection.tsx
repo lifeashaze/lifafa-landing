@@ -1,6 +1,4 @@
 import { Bricolage_Grotesque } from "next/font/google";
-import { TeamCardTab } from "./TeamCardTab";
-import Image from "next/image";
 import TeamCard from "./TeamCard";
 
 const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
