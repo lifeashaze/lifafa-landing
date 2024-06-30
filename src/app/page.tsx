@@ -6,6 +6,7 @@ import { Contact } from "@/components/Contact";
 import TempHero from "@/components/TempHero";
 import { LifafaHeroMarquee } from "@/components/Marquee";
 import { LifafaHeroMarquee2 } from "@/components/Marquee2";
+import WorksSection from "@/components/WorksSection";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <LifafaHeroMarquee2 />
       <TabsDemo />
       <OurTeam />
+      <WorksSection />
       <Contact />
       <Footer />
     </div>
