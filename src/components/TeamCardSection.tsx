@@ -20,7 +20,7 @@ const team: TeamMember[] = [
   {
     fname: "Chinmay",
     lname: "Mhatre",
-    imgSrc: "/Chinmay.svg",
+    imgSrc: "/Chinmay.png",
     roles: ["UI/UX", "Graphic Design", "Web Development"],
   },
   {
@@ -30,10 +30,10 @@ const team: TeamMember[] = [
     roles: ["Video Editing"],
   },
   {
-    fname: "Om",
-    lname: "Sakharkar",
-    imgSrc: "/Prithvi.png",
-    roles: ["3D Modelling", "Product Design"],
+    fname: "Abhishek",
+    lname: "Bhagawati",
+    imgSrc: "/Abhishek.png",
+    roles: ["Web Development", "Client Liaison"],
   },
 ];
 
