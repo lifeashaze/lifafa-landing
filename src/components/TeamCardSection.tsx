@@ -33,7 +33,7 @@ const team: TeamMember[] = [
     fname: "Abhishek",
     lname: "Bhagawati",
     imgSrc: "/Abhishek.png",
-    roles: ["Web Development", "Client Liaison"],
+    roles: ["Web Development", "Client Management"],
   },
 ];
 
